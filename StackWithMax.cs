@@ -192,34 +192,5 @@ namespace StackWithMaximumMaintaiance
             Console.WriteLine(maximums);
             Console.ReadLine();
         }
-
-        //static void Main(string[] args)
-        //{
-        //    StackWithMaximum stack = new StackWithMaximum();
-        //    int TimesNum = int.Parse(Console.ReadLine());
-        //    string[] commands;
-        //    string command;
-        //    StringBuilder maximumsHistory = new StringBuilder();
-
-        //    Action<int> e;
-        //    Dictionary<string, Action<int>> methodsToCall = new Dictionary<string, Action<int>>();
-        //    methodsToCall["push"] = (int Value) => { stack.Push(Value); };
-        //    methodsToCall["pop"] = (int Value) => { stack.Pop(); };
-        //    methodsToCall["max"] = (int Value) => { maximumsHistory.Append( stack.GetMaximum() + "\n" ); };
-
-        //    for (int i =0; i < TimesNum; i++)
-        //    {
-        //        commands = Console.ReadLine().Split();
-        //        command = commands[0];
-        //        e = methodsToCall[command];
-        //        if (commands.Length > 1)
-        //            e(int.Parse(commands[1]));
-        //        else
-        //            e(0);
-        //    }
-
-        //    Console.WriteLine(maximumsHistory.ToString());
-        //    Console.ReadLine();
-        //}
     }
 }

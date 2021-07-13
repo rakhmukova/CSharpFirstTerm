@@ -51,7 +51,7 @@ namespace PointInsidePolygon
         {            
             int value = GetPointLocation(p, firstEndOfTheBorder, secondEndOfTheBorder);
             if (value ==0)
-            // Точка, лежит на прямой, содержащей отрезок. // отдельный метод для сравнения!
+
             {
                 if (firstEndOfTheBorder.x != secondEndOfTheBorder.x && 
                     (p.x >= firstEndOfTheBorder.x && p.x <= secondEndOfTheBorder.x || p.x <= firstEndOfTheBorder.x && p.x >= secondEndOfTheBorder.x))
@@ -64,7 +64,7 @@ namespace PointInsidePolygon
             return false;
         }
       
-        // Рассматриваем положение луча относительно стороны многоугольника.
+
         static public bool RayAndBorderHaveCommonPoints (Point startPoint, Point rayPoint, Point firstEnd, Point secondEnd) 
         {
             int startPointLocation = GetPointLocation(startPoint, firstEnd, secondEnd);
@@ -107,7 +107,6 @@ namespace PointInsidePolygon
         {
 
             Point keyPoint = new Point(coordinatesOfThePoint[0], coordinatesOfThePoint[1]);
-            //косяк
             int N = verticesCoordinates.GetUpperBound(0);
             Point[] PolygonVertices = new Point[N];
             int maximumXCordinate = verticesCoordinates[0,0];
